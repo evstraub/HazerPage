@@ -8,7 +8,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      hash: true,
+      title: "Hazer",
+      myPageHeader: "Hello World",
+      template: "./src/index.html",
+      filename: "./dist/index.html", //relative to root of the application
     }),
   ],
   output: {
